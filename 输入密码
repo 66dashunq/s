@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int ret = 0;
+	char mima[20] = { 0 };
+	printf("输入密码:");
+	scanf("%s", mima);
+	int ch = 0;
+	while ((ch = getchar()) != '\n')
+	{
+		;
+	}
+	//清除输入缓冲区"\n"
+	printf("请确认y/n");
+	ret = getchar();
+	if (ret == 'y')
+	{
+		printf("继续");
+	}
+	else
+	{
+		printf("取消");
+	}
+
+	return 0;
+}
